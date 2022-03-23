@@ -143,5 +143,50 @@ function elementoCreato(arrayIndice) {
     containerGenerale.appendChild(containerElemento);
 }
 
+// Milestone 3
+// Aggiungere alla pagina una select in cui le options corrispondono ai vari tipi di icone
+// (animal, vegetable, user).
+// Quando l'utente seleziona un tipo dalla select, visualizzare solamente le icone corrispondenti.
+
+const select = document.getElementById('all-icon');
+
+select.addEventListener('change', (event) => {
+
+    containerGenerale.innerHTML = '';
+
+    if (event.target.value === 'animal') {
+
+        arrayIcone.filter((elemento) => {
+
+            if (elemento.type === 'animal') {
+                elementoCreato(elemento);
+            }
+
+        })
+    } else if (event.target.value === 'vegetable') {
+
+        arrayIcone.filter((elemento) => {
+
+            if (elemento.type === 'vegetable') {
+                elementoCreato(elemento);
+            }
+
+        })
+    } else if (event.target.value === 'user') {
+
+        arrayIcone.filter((elemento) => {
+
+            if (elemento.type === 'user') {
+                elementoCreato(elemento);
+            }
+
+        })
+    } else if (event.target.value === 'all') {
+
+        arrayIcone.forEach((elemento) => {
+            elementoCreato(elemento);
+        })
+    }
 
 
+});
