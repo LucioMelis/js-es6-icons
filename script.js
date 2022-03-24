@@ -137,7 +137,7 @@ function elementoCreato(arrayIndice) {
     containerElemento.classList.add('col-2', 'text-center', 'py-4', 'lm-card');
 
     containerElemento.innerHTML = `
-    <i class="${arrayIndice.family} ${arrayIndice.prefix}${arrayIndice.name} ${arrayIndice.color} "></i>
+    <i class="${arrayIndice.family} ${arrayIndice.prefix}${arrayIndice.name} ${arrayIndice.color}"></i>
     <p>${arrayIndice.name}</p>`
 
     containerGenerale.appendChild(containerElemento);
