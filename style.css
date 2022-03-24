@@ -9,3 +9,36 @@
 .green{
     color: green;
 }
+
+h1{
+    color:#29b1dd;
+}
+
+.lm-background{
+    background-color: #29b1dd;
+}
+
+span{
+    color:white;
+    font-size: 1.3rem;
+}
+
+#container-generale{
+    background-color: #dddddd;
+}
+.lm-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #858585,
+             -5px -5px 10px #ffffff;
+    border: 1px solid black;
+}
+
+p{
+    margin: 0 !important;
+}
